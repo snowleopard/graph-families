@@ -1,4 +1,4 @@
-# Graph families benchmakrs
+# Graph families benchmarks
 
 This is a collection of benchmarks for _graph families_ and associated algorithms.
 
