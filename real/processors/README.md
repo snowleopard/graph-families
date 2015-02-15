@@ -2,10 +2,10 @@
 
 This directory contains benchmarks for the following processors: [ARM Cortex M0+](https://en.wikipedia.org/wiki/ARM_Cortex-M#Cortex-M0.2B), [Intel 8051](https://en.wikipedia.org/wiki/Intel_MCS-51), and [Texas Instruments MSP430](https://en.wikipedia.org/wiki/TI_MSP430).
 
+## Comparison of algorithms for findning compact graph families
 The following table compares several algorithms for deriving compact representations of graph families applied to these benchmarks. If you add a new benchmark, please modify the table accordingly.
 
-## Comparison of algorithms for findning compact graph families
-Model _size_ is the number of graphs in a graph family, _area_ of hardware instruction decoder is given in μm^2 (with corresponding opcode length in brackets), _runtimes_ are given in seconds.
+Model _size_ is the number of graphs in a graph family, _area_ of hardware instruction decoder is given in μm^2 (with corresponding opcode length in brackets), _runtimes_ are given in seconds. Best area results are highlighted in bold.
 
 <table>
   <tr>
@@ -32,7 +32,7 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
     <td>8</td>
     <td>133 (3)</td>
     <td>1292</td>
-    <td>126 (5)</td>
+    <td><strong>126 (5)</strong></td>
     <td>1</td>
     <td>144 (3)</td>
     <td>14</td>
@@ -43,7 +43,7 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
     <td>11</td>
     <td>-</td>
     <td>-</td>
-    <td>167 (5)</td>
+    <td><strong>167 (5)</strong></td>
     <td>1</td>
     <td>191 (4)</td>
     <td>16</td>
@@ -53,7 +53,7 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
   <tr>
     <td rowspan="3">Intel 8051</td>
     <td>7</td>
-    <td>130 (3)</td>
+    <td><strong>130 (3)</strong></td>
     <td>2092</td>
     <td>140 (6)</td>
     <td>1</td>
@@ -64,7 +64,7 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
   </tr>
   <tr>
     <td>8</td>
-    <td>160 (3)</td>
+    <td><strong>160 (3)</strong></td>
     <td>2075</td>
     <td>161 (7)</td>
     <td>1</td>
@@ -79,7 +79,7 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
     <td>-</td>
     <td>185 (8)</td>
     <td>1</td>
-    <td>185 (3)</td>
+    <td><strong>185 (3)</strong></td>
     <td>16</td>
     <td>196 (4)</td>
     <td>3</td>
@@ -87,7 +87,7 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
   <tr>
     <td rowspan="2">TI MSP430</td>
     <td>7</td>
-    <td>171 (4)</td>
+    <td><strong>171 (4)</strong></td>
     <td>1754</td>
     <td>177 (9)</td>
     <td>1</td>
@@ -98,7 +98,7 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
   </tr>
   <tr>
     <td>8</td>
-    <td>219 (4)</td>
+    <td><strong>219 (4)</strong></td>
     <td>1982</td>
     <td>256 (9)</td>
     <td>1</td>
