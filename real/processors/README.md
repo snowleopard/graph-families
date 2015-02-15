@@ -26,6 +26,7 @@ ___
 
 ## REPRODUCING RESULTS
 In order to reproduce the same result obtained, the interested user should follow the steps below.
+
 1. Download **Workcraft** at the following website: http://www.workcraft.org/, in particular in the section _Download_.
 2. Donwload the models included in this repository, or create a new model. It can be done by opening Workcraft and going into _Files_ -> _Open_, or _Files_ -> _Create work_ -> Conditional Partial Order Graphs (an interesting tutorial is present at http://www.workcraft.org/help/cpog_plugin).
 3. Run **SCENCO** encoder present into the tab _Tools_ -> _Encoding_ selecting the options which the user want to use for the encoding process.
