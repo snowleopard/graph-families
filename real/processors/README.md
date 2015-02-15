@@ -1,32 +1,118 @@
-## BENCHMARKS
-|Model|#POs|Exhaustive encoding||Single-literal encoding||Heuristic encoding (SA)||SAT-based encoding||
-|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
-|||**Best area**|**Runtime**|**Best area**|**Runtime**|**Best area**|**Runtime**|**Best area**|**Runtime**|
-|ARM Cortex M0+ |	11	|	-	|	-	|	**167,090 (5)**|	1	|	191,090 (4)|	16	|	204,800 (4)|	2	|
-|		|	8 	|	133,090 (3)|	1292	|	**126,300 (5)**|	1	|	143,680 (3)|	14	|	166,260 (3)|	2|
-|TI MSP430 	|	8	|	**219,350 (4)**|	1982	|	255,570 (9)|	1	|	244,010 (4)|	16	|	-	|	-|
-|		|	7	|	**171,330 (4)**|	1754	|	176,590 (9)|	1	|	185,750 (4)|	16	|	-	|	-|
-|Intel 8051	|	9	|	-	|	-	|	**184,870 (8)**|	1	|	185,310 (3)|	16	|	195,890 (4)|	3|
-|		|	8	|	**160,040 (3)**|	2075	|	161,450 (7)|	1	|	165,680 (3)|	15	|	195,760 (3)|	3|
-|		|	7	|	**130,140 (3)**|	2092	|	140,410 (6)|	1	|	140,150 (3)|	15	|	143,550 (3)|	1|
+# Processor benchmarks
 
-___
-___
+This directory contains benchmarks for the following processors: [ARM Cortex M0+](https://en.wikipedia.org/wiki/ARM_Cortex-M#Cortex-M0.2B), [Intel 8051](https://en.wikipedia.org/wiki/Intel_MCS-51), and [Texas Instruments MSP430](https://en.wikipedia.org/wiki/TI_MSP430).
 
+The following table compares several algorithms for deriving compact representations of graph families applied to these benchmarks. If you add a new benchmark, please modify the table accordingly.
 
-## DESCRIPTION
-Benchmark of the encoding approaches applied to different instructions set architecture subsets.
-Unit of measure: Area: [μ^2 m] (opcode length in brackets), Runtime [s].
+## Comparison of algorithms for findning compact graph families
+Model _size_ is the number of graphs in a graph family, _area_ of hardware instruction decoder is given in μm^2 (with corresponding opcode length in brackets), _runtimes_ are given in seconds.
 
-The file "benchmarks.txt" contains the results of the encoding processes applied to the models included into real folder.
-It needs to be modified by the user who wants to add a new model into the set.
+<table>
+  <tr>
+    <th colspan="2">Algorithm →</th>
+    <th colspan="2">Exhaustive encoding</th>
+    <th colspan="2">Single-literal encoding</th>
+    <th colspan="2">Heuristic encoding</th>
+    <th colspan="2">SAT-based encoding</th>
+  </tr>
+  <tr>
+    <td>Benchmark</td>
+    <td>Size</td>
+    <td>Area</td>
+    <td>Runtime</td>
+    <td>Area</td>
+    <td>Runtime</td>
+    <td>Area</td>
+    <td>Runtime</td>
+    <td>Area</td>
+    <td>Runtime</td>
+  </tr>
+  <tr>
+    <td rowspan="2">ARM Cortex M0+</td>
+    <td>8</td>
+    <td>133 (3)</td>
+    <td>1292</td>
+    <td>126 (5)</td>
+    <td>1</td>
+    <td>144 (3)</td>
+    <td>14</td>
+    <td>166 (3)</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>-</td>
+    <td>-</td>
+    <td>167 (5)</td>
+    <td>1</td>
+    <td>191 (4)</td>
+    <td>16</td>
+    <td>205 (4)</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Intel 8051</td>
+    <td>7</td>
+    <td>130 (3)</td>
+    <td>2092</td>
+    <td>140 (6)</td>
+    <td>1</td>
+    <td>140 (3)</td>
+    <td>15</td>
+    <td>144 (3)</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>160 (3)</td>
+    <td>2075</td>
+    <td>161 (7)</td>
+    <td>1</td>
+    <td>166 (3)</td>
+    <td>15</td>
+    <td>196 (3)</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>-</td>
+    <td>-</td>
+    <td>185 (8)</td>
+    <td>1</td>
+    <td>185 (3)</td>
+    <td>16</td>
+    <td>196 (4)</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td rowspan="2">TI MSP430</td>
+    <td>7</td>
+    <td>171 (4)</td>
+    <td>1754</td>
+    <td>177 (9)</td>
+    <td>1</td>
+    <td>186 (4)</td>
+    <td>16</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>219 (4)</td>
+    <td>1982</td>
+    <td>256 (9)</td>
+    <td>1</td>
+    <td>244 (4)</td>
+    <td>16</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</table>
 
-___
-___
+## Reproducing results
+Follow these steps to reproduce the above results:
+* Download the Workcraft framework: http://www.workcraft.org/.
+* Open the models from this repository in Workcraft: `File` → `Open work`.
+* Run the SCENCO graph encoding plugin: `Tools` → `Encoding` → `SCENCO`, selecting appropriate encoding algorithm in the plugin settings window.
 
-## REPRODUCING RESULTS
-In order to reproduce the same result obtained, the interested user should follow the steps below.
-
-1. Download **Workcraft** at the following website: http://www.workcraft.org/, in particular in the section _Download_.
-2. Donwload the models included in this repository, or create a new model. It can be done by opening Workcraft and going into _Files_ -> _Open_, or _Files_ -> _Create work_ -> Conditional Partial Order Graphs (an interesting tutorial is present at http://www.workcraft.org/help/cpog_plugin).
-3. Run **SCENCO** encoder present into the tab _Tools_ -> _Encoding_ selecting the options which the user want to use for the encoding process.
+If you cannot reproduce the results, please raise an issue: https://github.com/snowleopard/graph-families/issues/new.
