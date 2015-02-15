@@ -18,13 +18,13 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
   <tr>
     <td>Benchmark</td>
     <td>Size</td>
-    <td>Area</td>
+    <td width="80pt">Area</td>
     <td>Runtime</td>
-    <td>Area</td>
+    <td width="80pt">Area</td>
     <td>Runtime</td>
-    <td>Area</td>
+    <td width="80pt">Area</td>
     <td>Runtime</td>
-    <td>Area</td>
+    <td width="80pt">Area</td>
     <td>Runtime</td>
   </tr>
   <tr>
