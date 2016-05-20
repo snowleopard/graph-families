@@ -29,29 +29,128 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
   </tr>
   <tr>
     <td rowspan="2">ARM Cortex M0+</td>
+    <td>4</td>
+    <td><strong>123 (2)</strong></td>
+    <td>1</td>
+    <td>148 (4)</td>
+    <td>1</td>
+    <td><strong>123 (2)</strong></td>
+    <td>2</td>
+    <td><strong>123 (2)</strong></td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><strong>124 (3)</strong></td>
+    <td>181</td>
+    <td>157 (5)</td>
+    <td>1</td>
+    <td>135 (3)</td>
+    <td>5</td>
+    <td>155</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>161 (3)</td>
+    <td>539</td>
+    <td><strong>144 (5)</strong></td>
+    <td>1</td>
+    <td>164 (3)</td>
+    <td>8</td>
+    <td>182 (3)</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>171 (3)</td>
+    <td>1234</td>
+    <td><strong>144 (5)</strong></td>
+    <td>1</td>
+    <td>176 (3)</td>
+    <td>9</td>
+    <td>172 (3)</td>
+    <td>1</td>
+  </tr>
+  <tr>
     <td>8</td>
     <td>133 (3)</td>
     <td>1292</td>
     <td><strong>126 (5)</strong></td>
     <td>1</td>
     <td>144 (3)</td>
-    <td>14</td>
+    <td>10</td>
     <td>166 (3)</td>
     <td>2</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>-</td>
+    <td>-</td>
+    <td><strong>160 (5)</strong></td>
+    <td>1</td>
+    <td>179 (4)</td>
+    <td>11</td>
+    <td>187 (4)</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>-</td>
+    <td>-</td>
+    <td><strong>179 (5)</strong></td>
+    <td>1</td>
+    <td>190 (4)</td>
+    <td>12</td>
+    <td>180 (4)</td>
+    <td>1</td>
   </tr>
   <tr>
     <td>11</td>
     <td>-</td>
     <td>-</td>
-    <td><strong>167 (5)</strong></td>
+    <td><strong>169 (5)</strong></td>
     <td>1</td>
     <td>191 (4)</td>
-    <td>16</td>
+    <td>12</td>
     <td>205 (4)</td>
     <td>2</td>
   </tr>
   <tr>
     <td rowspan="3">Intel 8051</td>
+    <td>4</td>
+    <td>93 (2)</td>
+    <td>1</td>
+    <td><strong>85 (3)</strong></td>
+    <td>1</td>
+    <td>93 (2)</td>
+    <td>1</td>
+    <td>93</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><strong>94 (3)</strong></td>
+    <td>173</td>
+    <td>95 (4)</td>
+    <td>1</td>
+    <td><strong>94 (3)</strong></td>
+    <td>4</td>
+    <td>96 (3)</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><strong>125 (3)</strong></td>
+    <td>544</td>
+    <td>136 (5)</td>
+    <td>1</td>
+    <td><strong>125 (3)</strong></td>
+    <td>5</td>
+    <td>147 (3)</td>
+    <td>1</td>
+  </tr>
+  <tr>
     <td>7</td>
     <td><strong>130 (3)</strong></td>
     <td>2092</td>
@@ -84,8 +183,40 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
     <td>196 (4)</td>
     <td>3</td>
   </tr>
-  <tr>
     <td rowspan="2">TI MSP430</td>
+    <td>4</td>
+    <td><strong>116 (2)</strong></td>
+    <td>2</td>
+    <td>135 (4)</td>
+    <td>1</td>
+    <td><strong>116 (2)</strong></td>
+    <td>4</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><strong>129 (3)</strong></td>
+    <td>184</td>
+    <td>150 (6)</td>
+    <td>1</td>
+    <td>140 (3)</td>
+    <td>4</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><strong>159 (3)</strong></td>
+    <td>560</td>
+    <td>165 (7)</td>
+    <td>1</td>
+    <td><strong>159 (3)</strong></td>
+    <td>5</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
     <td>7</td>
     <td><strong>171 (4)</strong></td>
     <td>1754</td>
