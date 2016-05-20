@@ -28,7 +28,7 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
     <td>Runtime</td>
   </tr>
   <tr>
-    <td rowspan="2">ARM Cortex M0+</td>
+    <td rowspan="8">ARM Cortex M0+</td>
     <td>4</td>
     <td><strong>123 (2)</strong></td>
     <td>1</td>
@@ -117,7 +117,7 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
     <td>2</td>
   </tr>
   <tr>
-    <td rowspan="3">Intel 8051</td>
+    <td rowspan="6">Intel 8051</td>
     <td>4</td>
     <td>93 (2)</td>
     <td>1</td>
@@ -183,7 +183,7 @@ Model _size_ is the number of graphs in a graph family, _area_ of hardware instr
     <td>196 (4)</td>
     <td>3</td>
   </tr>
-    <td rowspan="2">TI MSP430</td>
+    <td rowspan="5">TI MSP430</td>
     <td>4</td>
     <td><strong>116 (2)</strong></td>
     <td>2</td>
