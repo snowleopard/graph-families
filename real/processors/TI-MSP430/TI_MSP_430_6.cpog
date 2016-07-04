@@ -24,7 +24,7 @@ ALU IFU2
 .scenario CPOG_4
 PCIU IFU
 ALU ALU2
-:!x_3 ALU2
+:!cd ALU2
 .end
 
 .scenario CPOG_5
@@ -36,6 +36,6 @@ ALU IFU
 IFU ALU2
 ALU PCIU2
 ALU2 IFU2
-:!x_3 IFU
-:!x_3 ALU2
+:!cd IFU
+:!cd ALU2
 .end

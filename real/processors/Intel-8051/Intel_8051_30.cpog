@@ -13,8 +13,8 @@ PCIU_2 IFU_2
 PCIU ALU
 IFU ALU_2
 ALU PCIU_2
-:!x_5 IFU
-:x_5 PCIU_2
+:!cd IFU
+:cd PCIU_2
 .end
 
 .scenario CPOG_2
@@ -24,8 +24,8 @@ ALU IFU
 ALU PCIU_2
 IFU ALU_2
 PCIU_2 IFU_2
-:x_5 IFU
-:!x_5 PCIU_2
+:cd IFU
+:!cd PCIU_2
 .end
 
 .scenario CPOG_3
@@ -39,8 +39,8 @@ ALU MAU
 PCIU_2 IFU_2
 ALU_2 COND
 COND IFU
-:x_5 PCIU_2
-:!x_5 COND
+:cd PCIU_2
+:!cd COND
 .end
 
 .scenario CPOG_4
@@ -56,9 +56,9 @@ IFU_2 ALU_3
 PCIU_3 IFU_3
 IFU ALU
 ALU_2 MAU_2
-:x_5 PCIU_3
-:!x_5 IFU_2
-:!x_5 PCIU_2
+:cd PCIU_3
+:!cd IFU_2
+:!cd PCIU_2
 .end
 
 .scenario CPOG_5
@@ -304,8 +304,8 @@ ALU MAU
 ALU_2 COND
 COND IFU
 ALU_2 PCIU_2
-:!x_5 PCIU_2
-:x_5 COND
+:!cd PCIU_2
+:cd COND
 .end
 
 .scenario CPOG_29
@@ -318,6 +318,6 @@ ALU_3 IFU_2
 IFU ALU_3
 ALU_2 COND
 COND IFU
-:x_5 PCIU_2
-:!x_5 COND
+:cd PCIU_2
+:!cd COND
 .end
